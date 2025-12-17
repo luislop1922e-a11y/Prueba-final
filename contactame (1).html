@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame - Biblioteca Mágica</title>
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Fredoka:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- AQUÍ CONECTAMOS EL CSS QUE ME MANDASTE -->
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+    <!-- Fondo de burbujas animadas -->
+    <div class="bubble-bg">
+        <div class="bubble" style="width: 60px; height: 60px; left: 10%; animation-duration: 8s;"></div>
+        <div class="bubble" style="width: 40px; height: 40px; left: 30%; animation-duration: 6s; animation-delay: 1s;"></div>
+        <div class="bubble" style="width: 70px; height: 70px; left: 70%; animation-duration: 9s; animation-delay: 2s;"></div>
+        <div class="bubble" style="width: 30px; height: 30px; left: 90%; animation-duration: 5s;"></div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="Aventura.html">🌟 Aventura</a>
+            <a href="Drama.html">🎭 Drama</a>
+            <a href="Fantasia.html">🐉 Fantasía</a>
+            <a href="Arte.html">🎨 Arte</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>¡Escríbeme!</h1>
+            <p>¿Tienes alguna duda o recomendación de libros?</p>
+        </div>
+
+        <!-- Tarjeta del Formulario -->
+        <div class="form-card">
+            <h2>✨ Enviar Mensaje ✨</h2>
+            <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+                
+                <div class="form-group">
+                    <label>Tu Nombre Mágico:</label>
+                    <input type="text" name="nombre" placeholder="Ej: Harry Potter" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Tu Correo Electrónico:</label>
+                    <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Tu Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Escribe aquí tus pensamientos..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">🚀 ENVIAR LECHUZA</button>
+            </form>
+            
+            <!-- Mensaje oculto (se activa con JS si quisieras, por ahora es decorativo en el CSS) -->
+            <div class="message success">¡Mensaje enviado con éxito! 📬</div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="contact-info">
+            <h3>📬 Otros medios de contacto</h3>
+            <p><span class="emoji">📧</span> jacqueline.garay@estudiantxs.uacm.edu.mx</p>
+            <p><span class="emoji">📍</span> UACM Casa Libertad</p>
+            <p><span class="emoji">⏰</span> Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>✨ © 2025 Biblioteca Mágica | <a href="index.html">Volver al Inicio</a> ✨</p>
+    </footer>
+
+</body>
+</html>
